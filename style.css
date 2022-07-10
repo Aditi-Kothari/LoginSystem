@@ -1,0 +1,281 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2 linear;
+    text-transform: capitalize;
+    outline: none;
+    text-decoration: none;
+    
+}
+body{
+    background-image: url("pizza-4968645_1920.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0;left: 0;
+    z-index: 1000;
+    padding: 2rem 3rem;
+    background-color: #111;
+}
+
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .logo{
+    font-size: 2rem;
+    color:brown;
+    font-weight: bold;
+}
+
+header .navbar ul li{
+    margin:0 1rem;
+
+}
+header .navbar ul li a{
+ color: #fff;
+ font-size: 1.3rem;
+ padding: 0.5rem;
+}
+
+header .navbar ul li a:hover{
+color: blue;
+}
+header #menu{
+    font-size: 2.2rem;
+    color:orange;
+    cursor: pointer;
+    display: none;
+}
+header.header-active{
+    background: #fff;
+    box-shadow: 0 .1rem 0.3rem rgba(0,0,0,0.3);
+
+}
+header.header-active .logo,
+header.header-active .navbar a{
+    color: #333;
+    
+}
+.heading{
+    margin-top: 10rem;
+    font-size: 2.8rem;
+    text-align: center;
+}
+.heading span{
+    color: brown;
+    font-size: 3.4rem;
+}
+.one{
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 2rem;
+}
+.two{
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+.btn{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.loginbtn{
+    display: block;
+    width:10rem;
+    padding: 0.5rem 0.4rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+    margin-right: 1rem;
+    font-size: 1.6rem;
+}
+.loginbtn:hover{
+    background: white;
+    color: black;
+}
+.signupbtn{
+    display: block;
+    width:10rem;
+    padding: 0.5rem 0.4rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+   font-size: 1.6rem;
+}
+.signupbtn:hover{
+    background: white;
+    color: black;
+}
+.para{
+    margin-top: 1.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+
+}
+.text{
+    margin-top: 0.6rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.text .btn2{
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: brown;
+    
+}
+
+.wrapper{
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    margin: 7rem auto;
+    margin-top: 10rem;
+    padding: 30px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.125);
+}
+.wrapper .title{
+          font-size: 30px;
+          font-weight: 700;
+          margin-bottom: 25px;
+          color:rgba(2, 26, 66, 0.87);
+          text-transform: uppercase;
+          text-align: center;
+}
+.wrapper .form{
+         width: 100%;
+}
+.wrapper .form .input_field{
+         margin-bottom: 18px;
+         display: flex;
+         align-items: center;
+}
+.wrapper .form .input_field label{
+             width:200px;
+             color:rgba(0, 0, 0, 0.623);
+             margin-right: 10px;
+             font-size: 18px;
+
+}
+.wrapper .form .input_field .input{
+  width: 100%;
+  outline: none;
+  border:1px solid rgba(0, 0, 0, 0.452);
+  padding:10px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+.wrapper .form .input_field .input:focus{
+border:2px solid rgb(193, 193, 240);
+}
+.wrapper .form .input_field .btn{
+width: 100%;
+padding: 10px 10px;
+font-size: 18px;
+border: 0;
+background: rgb(19, 27, 31);
+color: beige;
+cursor: pointer;
+border-radius: 5px;
+outline: none;
+}
+.wrapper .form .input_field .btn:hover{
+background-color: #0b081183;
+color: black;
+}
+.wrapper .form .input_field:last-child{
+margin-bottom: 0;
+}
+.error {
+    color: #FF0000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.container{
+    width: 100%;
+    margin: 7rem auto;
+    margin-top: 6rem;
+    padding: 30px;
+   
+}
+.container h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+.box{
+    display: flex;
+    justify-content: flex-end;
+}
+.box a{
+    text-align: center;
+    font-size: 1.2rem;
+    display: block;
+    width: 8rem;
+    color: blue;
+    background-color: black;
+    
+    padding: 0.5rem 0.5rem;
+}
+.box a:hover{
+    background: #fff;
+    color: #111;
+}
+
+@media(max-width:420px){
+.wrapper .form .input_field{
+  flex-direction: column;
+  align-items: flex-start;
+}
+.wrapper .form .input_field label{
+  margin-bottom: 5px;
+}
+}
+
+@media (max-width:768px){
+   
+    header #menu{
+        display: block;
+    }
+    header .navbar{
+        position: fixed;
+        top: -100rem;
+        opacity: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        bottom: .1rem solid rgba(0,0,0,0.3);
+    }
+    header .navbar ul{
+        flex-flow: column;
+        padding: 2rem 0;
+
+    }
+    header .navbar ul li{
+        margin: 1rem 0;
+        text-align: center;
+        width: 100%;
+
+    }
+    header .navbar ul li a{
+        font-size: 1.5rem;
+        color: #111;
+        
+    }
+    header .navbar.nav-toggle{
+        top:8rem;
+        opacity: 1;
+        }
+         
+}
